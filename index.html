@@ -59,15 +59,15 @@ footer{font-size:.78rem;color:var(--d);text-align:center;padding:14px}
 <tr><td>D. 좋은 결과</td><td>미집계</td><td>재발굴 시 공적급여 전환, 12개월 재위기 없음</td></tr></table>
 <p class="src">출처 [2] 김교흥 의원 국감 질의·사보원장 답변(2026-10-22) [3] 서영석 의원실, 보건복지부 제출 자료(2026-10) [12] 보건복지부 설명자료(2026-10-10)</p></section>
 
-<section id="s3"><h2>③ 임대단지 고독사 — 직접 집계한 실데이터</h2><p class="lead">주택관리공단 「단지별 고독사 현황」(공공데이터포털 15165404, 2019-01~2026-06) 190행을 내려받아 집계했습니다.</p>
-<div class="grid"><div class="kpi"><b id="k1"></b><span>공공임대 단지 고독사 건수</span></div><div class="kpi"><b id="k2"></b><span>발생 단지 수</span></div><div class="kpi warn"><b id="k3"></b><span>영구임대 포함 단지에서 발생</span></div><div class="kpi warn"><b>9곳 · 55건</b><span>세대 규모로 설명되지 않는 단지 (세대수 보정 포아송 검정 p&lt;0.01)</span></div></div>
+<section id="s3"><h2>③ 임대단지 고독사 — 직접 집계한 실데이터</h2><p class="lead">주택관리공단 「단지별 고독사 현황」(공공데이터포털 15165404, 2019-01~2026-06) 190행(200건)을 내려받아 집계했습니다.</p>
+<div class="grid"><div class="kpi"><b id="k1"></b><span>공공임대 단지 고독사 건수</span></div><div class="kpi"><b id="k2"></b><span>발생 단지 수</span></div><div class="kpi warn"><b id="k3"></b><span>영구임대 포함 단지에서 발생</span></div><div class="kpi warn"><b>10곳 · 57건</b><span>세대 규모로 설명되지 않는 단지 (세대수 보정 포아송 검정 p&lt;0.01)</span></div></div>
 <h3>세대수로 보정하면 — 규모로 설명되는 것과 안 되는 것</h3>
 <p class="lead">공단 「임대주택 주거복지 커뮤니티 현황」(공공데이터포털 15154080)의 단지별 세대수를 붙였습니다. 세대수가 있는 309개 단지(26만 59세대, 고독사 199건)를 같은 위험률로 놓았을 때의 기대값과 비교합니다.</p>
 <table><tr><th></th><th>관측</th><th>세대수 비례 기대</th></tr>
-<tr><td>고독사 0건 단지</td><td>214곳</td><td>174곳</td></tr><tr><td>2건 이상 단지</td><td>42곳</td><td>45곳</td></tr><tr><td><b>3건 이상 단지</b></td><td><b>25곳</b></td><td><b>13곳</b></td></tr></table>
+<tr><td>고독사 0건 단지</td><td>214곳</td><td>174곳</td></tr><tr><td>1건 단지</td><td>53곳</td><td>90곳</td></tr><tr><td>2건 이상 단지</td><td>42곳</td><td>45곳</td></tr><tr><td><b>3건 이상 단지</b></td><td><b>25곳</b></td><td><b>13곳</b></td></tr></table>
 <p class="note">「2건 이상 난 단지가 많다」는 것만으로는 근거가 되지 않습니다(큰 단지가 많아서 생기는 수와 비슷함). 그러나 0건 단지와 3건 이상 단지가 모두 기대보다 많아, 같은 규모라도 <b>나는 곳에 몰린다</b>(과산포 2.67, p&lt;0.001).</p>
-<h3>세대 규모로 설명되지 않는 9개 단지 (포아송 p&lt;0.01, 7.5년 누계)</h3>
-<table><tr><th>단지</th><th>세대수</th><th>고독사</th><th>기대</th></tr><tr><td>통영도남</td><td>468</td><td>8</td><td>0.4</td></tr><tr><td>밀양가곡1</td><td>447</td><td>7</td><td>0.3</td></tr><tr><td>부산모라1</td><td>2,529</td><td>11</td><td>1.9</td></tr><tr><td>상주냉림3</td><td>478</td><td>4</td><td>0.4</td></tr><tr><td>군산나운4</td><td>1,999</td><td>7</td><td>1.5</td></tr><tr><td>마산중리1</td><td>996</td><td>5</td><td>0.8</td></tr><tr><td>나주용산</td><td>288</td><td>3</td><td>0.2</td></tr><tr><td>광주하남1</td><td>1,884</td><td>6</td><td>1.4</td></tr><tr><td>부산동삼1</td><td>976</td><td>4</td><td>0.7</td></tr></table>
+<h3>세대 규모로 설명되지 않는 10개 단지 (포아송 p&lt;0.01, 7.5년 누계)</h3>
+<table><tr><th>단지</th><th>세대수</th><th>고독사</th><th>기대</th></tr><tr><td>통영도남</td><td>468</td><td>8</td><td>0.4</td></tr><tr><td>밀양가곡1</td><td>447</td><td>7</td><td>0.3</td></tr><tr><td>부산모라1</td><td>2,529</td><td>11</td><td>1.9</td></tr><tr><td>상주냉림3</td><td>478</td><td>4</td><td>0.4</td></tr><tr><td>군산나운4</td><td>1,999</td><td>7</td><td>1.5</td></tr><tr><td>마산중리1</td><td>996</td><td>5</td><td>0.8</td></tr><tr><td>나주용산</td><td>288</td><td>3</td><td>0.2</td></tr><tr><td>광주하남1</td><td>1,884</td><td>6</td><td>1.4</td></tr><tr><td>부산동삼1</td><td>976</td><td>4</td><td>0.7</td></tr><tr><td>화천신읍공공실버주택</td><td>120</td><td>2</td><td>0.1</td></tr></table>
 <div class="two"><div><h3>연도별</h3><div id="gy"></div></div><div><h3>지역별 (단지명 기준 분류)</h3><div id="gr"></div></div></div>
 <p class="note">연 41건(2019)에서 14건(2024)으로 줄었습니다. 전국 고독사는 최근 늘었습니다(2022년 3,559명 → 2024년 3,924명). 줄어든 단지와 되풀이된 단지의 차이를 결과로 확인할 방법이 지금은 없습니다. 고독사 정의는 제공기관 기준이며, 「문산당동」은 공단 공고명 「[파주/문산당동3]」으로 파주시 문산읍 확인. 2026년은 6월까지.</p>
 <h3>두 데이터를 결합하면 — 기초생활보장 수급권자 10만 명당 임대단지 고독사 (7.5년 누계, 건)</h3><div id="rate"></div><p class="lead" style="margin-top:6px">주택관리공단 고독사 건수 ÷ 사보원 시도별 수급권자(2025-12, 중복 제거). 분모가 공단 관리 세대수가 아니어서 「관리 단지가 많은 지역」의 영향이 섞여 있습니다. 발생률이 아니라 결합 예시입니다.</p>
